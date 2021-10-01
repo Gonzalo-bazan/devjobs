@@ -1,0 +1,48 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "Portal DevJobs con NodeJS, Handlebar Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index",
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\"  ",
+    "start": "node ./index.js",
+    "watch": "webpack --watch --mode development"
+  },
+  "author": "Gonzalo Bazán",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.4.1",
+    "connect-mongodb-session": "^3.0.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "express-validator": "5.3.1",
+    "http-errors": "^1.7.2",
+    "mogoose": "^0.0.1-security",
+    "mongoose": "^5.13.5",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.6.5",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "session": "^0.1.0",
+    "shortid": "^2.2.16",
+    "slug": "^5.1.0",
+    "sweetalert2": "^11.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.12",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
